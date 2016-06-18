@@ -1,0 +1,78 @@
+.main {
+    margin: auto;
+    width: 500px;
+}
+.playlist li{
+    padding: 2px 20px;
+}
+
+.playlist li:hover {
+    background: #4E3E3E;
+}
+
+progress {
+    display: block;
+    margin: 5px 0 10px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.time,
+.current-volume {
+    font-size: 13px;
+}
+
+progress.volume {
+    width: 50%;
+}
+.current-volume {
+    color: #ccc;
+}
+.audio {
+    display: none;
+}
+.player {
+    background: #4E3E3E;
+    border-radius: 4px;
+}
+#canvas {
+    border: 1px solid #A5A5A5;
+    display: block;
+    height: 8px;
+    width: 100%;
+    margin: 5px 0;
+    background: #BDBDBD;
+    border-radius: 10px;
+}
+.progress-volume {
+    width: 100px;
+}
+.pic {
+    width: 160px;
+    margin: 0 10px;
+    float: left;
+}
+.icon {
+    width: 150px;
+    height: auto;
+}
+.controls {
+    width: 300px;
+    margin-left: 185px;
+    padding-top: 10px;
+}
+.current-song {
+    padding: 20px 0 5px;
+    text-align: center;
+    color: #ccc;
+}
+.time {
+    color: #ccc;
+    text-align: center;
+    display: block;
+}

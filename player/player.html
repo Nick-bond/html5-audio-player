@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+
+<div class="main">
+    <div class="player">
+    <h3 class="current-song">
+        Patricia Touma - Riding On The Bus
+    </h3>
+        <div class="time"><span class="time-spend">2:40</span> from <span class="time-duration">3:20</span></div>
+    <hr>
+    <div class="pic">
+        <img src="mp3s/music.png" alt="" class="icon">
+    </div>
+    <div class="controls">
+        <audio style="display: none" id="audio" controls="true" src="mp3s/PatriciaTouma_TheFrostIsOnThePumpkin.mp3">
+            Patricia Touma - Riding On The Bus
+        </audio>
+        <canvas id="canvas" width="300" height="5">
+            canvas not supported
+        </canvas>
+        <button class="play btn glyphicon glyphicon-play"></button>
+        <button class="prev btn glyphicon glyphicon-backward"></button>
+        <button class="btn fast-backward glyphicon glyphicon-fast-backward"></button>
+        <button class="btn fast-forward glyphicon glyphicon-fast-forward"></button>
+        <button class="next btn glyphicon glyphicon glyphicon-forward"></button>
+        <button class="mute btn glyphicon glyphicon-volume-up"></button>
+    </div>
+    <hr>
+
+    <div class="volume-controls">
+        <progress class="progress-volume" max="1" value="0"></progress>
+        <button class="volume-up btn glyphicon glyphicon-plus"></button>
+        <button class="volume-down btn glyphicon glyphicon-minus"></button>
+        <span class="current-volume">100%</span>
+    </div>
+
+    <hr>
+    <ul class="playlist">
+        <li><a href="#" class="active" data-file="PatriciaTouma_RidingOnTheBus.mp3">Patricia Touma - Riding On The Bus</a></li>
+        <li><a href="#" data-file="PatriciaTouma_TheFrostIsOnThePumpkin.mp3">Patricia Touma - The Frost Is On The
+            Pumpkin</a></li>
+        <li><a href="#" data-file="PatriciaTouma_TheMerryGoRound.mp3">Patricia Touma - The Merry Go Round</a></li>
+    </ul>
+
+    <hr>
+    </div>
+</div>
+<script src="player.js"> </script>
+</body>
+</html>
